@@ -4,6 +4,7 @@ def gold_room():
     print "This room is full of gold. How much do you want to take?"
 
     choice = raw_input("> ")
+
     if "0" in choice or "1" in choice:
         how_much = int(choice)
     else:
@@ -62,9 +63,9 @@ def start():
 
     choice = raw_input("> ")
 
-    if choice == "left":
+    if "left" in choice:
         bear_room()
-    if choice == "right":
+    if "right" in choice:
         cthulhu_room()
     else:
         dead("You stumble around until you starve to death.")
