@@ -52,6 +52,11 @@ def dict_example():
     print "Michigan's abbreviation is: ", states['Michigan']
     print "Florida's abbreviation is: ", states['Florida']
 
+# do it by using the state then cities dict_example
+    print '-' * 10
+    print 'Michigan has: ', cities[states['Michigan']]
+    print 'Florida has: ', cities[states['Florida']]
+    
 # print every state abbreviation
     print "-" * 10
     for state, abbrev in states.items():
